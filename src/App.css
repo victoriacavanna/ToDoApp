@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  background-color: #c5aeff;
+  color: #1a1a1a;
+  font-weight: bolder;
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #1A1A40;
+}
+li button {
+  font-size: 0.8rem;
+  background-color: #1A1A40;
+  border-color: #fff;
+  
+}
+.header {
+  font-size: 1.5rem;
+  padding: 5%;
+}
+.text-new {
+  padding-right: 5%;
+}
+.todoWrapper {
+  background: #1A1A40;
+  min-width: 600px;
+  margin-top: 5rem;
   padding: 2rem;
+  border-radius: 5px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todoForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  color: #fff;
+  padding: 1rem 1rem;
+  width: 300px;
+  height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 1rem;
+}
+.todoForm button {
+  border-radius: 0px;
+  height: 50px;
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
 }
